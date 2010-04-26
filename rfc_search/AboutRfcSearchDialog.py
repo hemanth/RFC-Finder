@@ -6,7 +6,6 @@
 import gtk
 
 from rfc_search.helpers import get_builder
-
 import gettext
 from gettext import gettext as _
 gettext.textdomain('rfc-search')
