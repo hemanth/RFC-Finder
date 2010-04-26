@@ -91,7 +91,7 @@ class RfcSearchWindow(gtk.Window):
     def about(self, widget, data=None):
         """Display the about box for rfc-search."""
         get = self.builder.get_object
-		self.rfc_search_window.entry1 = get("entry1")
+				self.rfc_search_window.entry1 = get("entry1")
         self.rfc_search_window.button1 = get("button1")
         self.rfc_search_window = get("rfc_search_window")
         about = AboutRfcSearchDialog.AboutRfcSearchDialog()
