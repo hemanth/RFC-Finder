@@ -1,0 +1,8 @@
+[Desktop Entry]
+_Name=Rfc Search
+_Comment=RfcSearch application
+Categories=GNOME;Utility;
+Exec=rfc-search
+Icon=rfc-search
+Terminal=false
+Type=Application
