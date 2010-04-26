@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <interface>
-  <!-- interface-requires rfc_search_window 1.0 -->
   <requires lib="gtk+" version="2.16"/>
+  <!-- interface-requires rfc_search_window 1.0 -->
   <!-- interface-naming-policy project-wide -->
   <!-- interface-local-resource-path ../media -->
   <object class="RfcSearchWindow" id="rfc_search_window">
@@ -33,6 +33,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_button1_clicked"/>
               </object>
               <packing>
                 <property name="resize">True</property>

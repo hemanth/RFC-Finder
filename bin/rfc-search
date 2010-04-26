@@ -90,6 +90,10 @@ class RfcSearchWindow(gtk.Window):
 
     def about(self, widget, data=None):
         """Display the about box for rfc-search."""
+        get = self.builder.get_object
+		self.rfc_search_window.entry1 = get("entry1")
+        self.rfc_search_window.button1 = get("button1")
+        self.rfc_search_window = get("rfc_search_window")
         about = AboutRfcSearchDialog.AboutRfcSearchDialog()
         response = about.run()
         about.destroy()
@@ -112,6 +116,10 @@ class RfcSearchWindow(gtk.Window):
         # Clean up code for saving application state should be added here.
         gtk.main_quit()
 
+	def on_button1_clicked(self, button, data=None):
+		 x = self.urfc_search_window.entry1.get_text()
+		 print x
+        
 if __name__ == "__main__":
     # Support for command line options.
     import logging
