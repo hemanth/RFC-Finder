@@ -7,6 +7,7 @@
 import sys
 import os
 import gtk
+import urllib2
 
 import gettext
 from gettext import gettext as _
@@ -88,10 +89,22 @@ class RfcSearchWindow(gtk.Window):
 
         # Code for other initialization actions should be added here.
 
+
+        # It can be tiresome to have to type builder.get_object
+        # again and again
+        get = self.builder.get_object
+        
+        self.rfc_search_window = get("rfc_search_window")
+        self.rfc_search_window.button1 = get("button1")
+        self.rfc_search_window.entry1 = get("entry1")
+        self.rfc_search_window.textview1 = get("textview1")
+
+    
+
     def about(self, widget, data=None):
         """Display the about box for rfc-search."""
         get = self.builder.get_object
-				self.rfc_search_window.entry1 = get("entry1")
+	self.rfc_search_window.entry1 = get("entry1")
         self.rfc_search_window.button1 = get("button1")
         self.rfc_search_window = get("rfc_search_window")
         about = AboutRfcSearchDialog.AboutRfcSearchDialog()
@@ -116,10 +129,12 @@ class RfcSearchWindow(gtk.Window):
         # Clean up code for saving application state should be added here.
         gtk.main_quit()
 
-	def on_button1_clicked(self, button, data=None):
-		 x = self.urfc_search_window.entry1.get_text()
-		 print x
-        
+    def on_button1_clicked(self, button, data=None):
+        rfc = self.rfc_search_window.entry1.get_text()
+        url = 'http://www.ietf.org/rfc/rfc'+rfc+'.txt'
+        response = urllib2.urlopen(url)
+        html = response.read()
+        print html
 if __name__ == "__main__":
     # Support for command line options.
     import logging
