@@ -6,7 +6,7 @@ Build-Depends: cdbs (>= 0.4.43),
  python,
  python-support (>= 0.6.4),
  python-distutils-extra (>= 2.10)
-Maintainer: UNKNOWN <UNKNOWN>
+Maintainer: Hemanth <hemanth.hm@gmail.com>
 Standards-Version: 3.8.3
 XS-Python-Version: current
 

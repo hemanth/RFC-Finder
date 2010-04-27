@@ -1,3 +1,16 @@
+rfc-search (10.04) lucid; urgency=low
+
+  * Creating ubuntu package
+  * Modified author section
+  * First cut
+  * Made changes to get data to window
+  * fixed indentation errors and now getting user input
+  * fixed indentation error
+  * Added few fuction for  on click
+  * Added first cut
+
+ -- hemnath.hm <hemanth.hm@gmail.com>  Tue, 27 Apr 2010 11:39:07 +0530
+
 rfc-search (0.1) lucid; urgency=low
 
   * New release.
