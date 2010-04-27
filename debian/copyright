@@ -1,9 +1,0 @@
-Format-Specification: http://wiki.debian.org/Proposals/CopyrightFormat
-Upstream-Name: rfc-search
-Upstream-Maintainer: UNKNOWN <UNKNOWN>
-Upstream-Source: UNKNOWN
-
-Files: *
-Copyright: (C) 2010 hemanth.hm hemanth.hm@gmail.com
-Copyright: (C) YYYY <Your Name> <Your E-mail>
-License: UNKNOWN
