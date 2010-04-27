@@ -3,6 +3,6 @@ _Name=Rfc Search
 _Comment=RfcSearch application
 Categories=GNOME;Utility;
 Exec=rfc-search
-Icon=rfc-search
+Icon=/usr/share/rfc-search/media/icon.png
 Terminal=false
 Type=Application
