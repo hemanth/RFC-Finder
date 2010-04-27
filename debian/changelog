@@ -1,0 +1,7 @@
+rfc-search (1.0) lucid; urgency=low
+
+  * Removed debian dir, for fixing the version number
+  * Creating ubuntu package
+  * Removed debian dir, for fixing the version number
+
+ -- hemnath.hm <hemanth.hm@gmail.com>  Tue, 27 Apr 2010 14:37:36 +0530
