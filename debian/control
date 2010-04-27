@@ -17,5 +17,5 @@ Depends: ${misc:Depends},
  ${python:Depends},
  python-gtk2,
  python-desktopcouch-records
-Description: Search RFC
- This is a standalone app for searching RFC's 
+Description: UNKNOWN
+ UNKNOWN

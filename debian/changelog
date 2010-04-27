@@ -1,3 +1,9 @@
+rfc-search (10.04.2) lucid; urgency=low
+
+  * New release.
+
+ -- hemnath.hm <hemanth.hm@gmail.com>  Tue, 27 Apr 2010 13:44:21 +0530
+
 rfc-search (1.0) lucid; urgency=high
 
   * Added validation for input
