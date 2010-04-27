@@ -143,9 +143,16 @@ class RfcSearchWindow(gtk.Window):
     def on_find_clicked(self, button, data=None):
         rfc = self.rfc_search_window.rfc.get_text()
         url = 'http://www.ietf.org/rfc/rfc'+rfc+'.txt'
-        response = urllib2.urlopen(url)
-        html = response.read()
-        self.rfc_search_window.result.set_text(str(html))
+        try:
+            response = urllib2.urlopen(url)
+        except IOError,e:
+          if hasattr(e, 'code'):
+            if e.code != 401:
+                self.rfc_search_window.result.set_text("No such RFC found!")
+            else:
+                html = response.read()
+                self.rfc_search_window.result.set_text(str(html))
+					
 if __name__ == "__main__":
     # Support for command line options.
     import logging

@@ -58,7 +58,12 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="is_focus">True</property>
+                <property name="can_default">True</property>
+                <property name="has_default">True</property>
                 <property name="invisible_char">&#x2022;</property>
+                <property name="activates_default">True</property>
+                <property name="shadow_type">out</property>
+                <property name="caps_lock_warning">False</property>
               </object>
               <packing>
                 <property name="position">-1</property>
@@ -69,7 +74,7 @@
                 <property name="label" translatable="yes">Find</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
-                <property name="receives_default">True</property>
+                <property name="receives_default">False</property>
                 <property name="border_width">2</property>
                 <property name="relief">half</property>
                 <property name="image_position">top</property>
