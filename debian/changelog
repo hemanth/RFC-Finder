@@ -1,3 +1,10 @@
+rfc-search (10.04.1) lucid; urgency=low
+
+  * Added validation for input
+  * Added some padding for the search button
+
+ -- hemnath.hm <hemanth.hm@gmail.com>  Tue, 27 Apr 2010 13:39:16 +0530
+
 rfc-search (10.04) lucid; urgency=low
 
   * Creating ubuntu package
