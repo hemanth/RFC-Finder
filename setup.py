@@ -88,7 +88,7 @@ class InstallAndUpdateDataDirectory(DistUtilsExtra.auto.install_auto):
 
 DistUtilsExtra.auto.setup(
     name='rfc-search',
-    version='10.04',
+    version='1.0',
     license='GPL-3',
     author='Hemanth',
     author_email='hemanth.hm@gmail.com',
