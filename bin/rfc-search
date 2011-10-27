@@ -2,16 +2,16 @@
 # -*- coding: utf-8 -*-
 ### BEGIN LICENSE
 # Copyright (C) 2010 hemanth.hm hemanth.hm@gmail.com
-# This program is free software: you can redistribute it and/or modify it 
-# under the terms of the GNU General Public License version 3, as published 
+# This program is free software: you can redistribute it and/or modify it
+# under the terms of the GNU General Public License version 3, as published
 # by the Free Software Foundation.
-# 
-# This program is distributed in the hope that it will be useful, but 
-# WITHOUT ANY WARRANTY; without even the implied warranties of 
-# MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR 
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranties of
+# MERCHANTABILITY, SATISFACTORY QUALITY, or FITNESS FOR A PARTICULAR
 # PURPOSE.  See the GNU General Public License for more details.
-# 
-# You should have received a copy of the GNU General Public License along 
+#
+# You should have received a copy of the GNU General Public License along
 # with this program.  If not, see <http://www.gnu.org/licenses/>.
 ### END LICENSE
 
@@ -48,8 +48,8 @@ from rfc_search.helpers import get_builder
 
 class RfcSearchWindow(gtk.Window):
     __gtype_name__ = "RfcSearchWindow"
-    
-    # To construct a new instance of this method, the following notable 
+
+    # To construct a new instance of this method, the following notable
     # methods are called in this order:
     # __new__(cls)
     # __init__(self)
@@ -58,11 +58,11 @@ class RfcSearchWindow(gtk.Window):
     #
     # For this reason, it's recommended you leave __init__ empty and put
     # your inialization code in finish_intializing
-    
+
     def __new__(cls):
-        """Special static method that's automatically called by Python when 
+        """Special static method that's automatically called by Python when
         constructing a new instance of this class.
-        
+
         Returns a fully instantiated RfcSearchWindow object.
         """
         builder = get_builder('RfcSearchWindow')
@@ -76,7 +76,7 @@ class RfcSearchWindow(gtk.Window):
         finish_initalizing should be called after parsing the UI definition
         and creating a RfcSearchWindow object with it in order to finish
         initializing the start of the new RfcSearchWindow instance.
-        
+
         Put your initilization code in here and leave __init__ undefined.
         """
         # Get a reference to the builder and set up the signals.
@@ -104,13 +104,13 @@ class RfcSearchWindow(gtk.Window):
         # It can be tiresome to have to type builder.get_object
         # again and again
         get = self.builder.get_object
-        
+
         self.rfc_search_window = get("rfc_search_window")
         self.rfc_search_window.find = get("find")
         self.rfc_search_window.rfc = get("rfc")
         self.rfc_search_window.result = get("result")
 
-    
+
 
     def about(self, widget, data=None):
         """Display the about box for rfc-search."""
@@ -152,7 +152,7 @@ class RfcSearchWindow(gtk.Window):
             else:
                 html = response.read()
                 self.rfc_search_window.result.set_text(str(html))
-					
+
 if __name__ == "__main__":
     # Support for command line options.
     import logging
