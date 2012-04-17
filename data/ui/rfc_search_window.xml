@@ -1,7 +1,7 @@
-<glade-catalog name="rfc_search_window" domain="glade-3" 
+<glade-catalog name="rfc_search_window" domain="glade-3"
                depends="gtk+" version="1.0">
   <glade-widget-classes>
-    <glade-widget-class title="Rfc Search Window" name="RfcSearchWindow" 
+    <glade-widget-class title="Rfc Search Window" name="RfcSearchWindow"
                         generic-name="RfcSearchWindow" parent="GtkWindow"
                         icon-name="widget-gtk-window"/>
   </glade-widget-classes>
